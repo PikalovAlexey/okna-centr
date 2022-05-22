@@ -3,7 +3,7 @@ let quiz = document.getElementsByClassName('frame__quiz');
 let ellips = document.getElementsByClassName('ellips');
 let frame_end = document.getElementById('frame__contant_end');
 let frame_main_ask = document.getElementById('frame__contant_container');
-let messeger_block = document.getElementById('mes_block')
+let messeger_block = Array.from(document.getElementsByClassName('frame__contant_message'))
 
 let counter = 0;
 quiz[counter].style.display = 'block';
@@ -30,11 +30,14 @@ function closeOpenFrame() {
     frame.classList.toggle('close')
 }
 
-
-function hide(e) {
-    if (e.target.className ==='frame__contant_message') {
-        console.log(e.target)
-    }
+function hide() {
+    messeger_block.forEach(element => {
+        if(element.classList.contains('active_message')) {
+            element.classList.remove('active_message')
+        }
+    });
+    this.classList.toggle('active_message')
 }
-
-messeger_block.addEventListener('click', hide)
+messeger_block.forEach(element => {
+    element.onclick = hide
+});
