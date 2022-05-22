@@ -30,7 +30,7 @@ function closeOpenFrame() {
     frame.classList.toggle('close')
 }
 
-function hide() {
+function hide() { // Note bane!!! Function is O(N2)!!!!!
     messeger_block.forEach(element => {
         if(element.classList.contains('active_message')) {
             element.classList.remove('active_message')
