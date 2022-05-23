@@ -32,7 +32,7 @@
                     <div class="frame__contant_contact">
                         <form action="#">
                             <p style="margin: 25px 0px 15px 0px">Ваш телефон:</p>
-                            <input class="frame__contant_input_number" type="number" name="phone" id="phone_quiz">
+                            <input class="frame__contant_input_number" name="phone" value="+7 " id="phone_quiz">
                             <input class="frame__contant_input_button" type="button" value="Получить!">
                         </form>
                     </div>
@@ -64,22 +64,22 @@
                                 <table>
                                     <tr>
                                         <td >
-                                            <td><input type="radio" name="1_1" id=""></td>
-                                            <td class="td"><span>1-3 окна</span></td>
+                                            <td><input type="radio" name="wind" value="1-3 окон" id="1-3"></td>
+                                            <td class="td"><label for="1-3"><span>1-3 окон</span></label></td>
                                         </td>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
-                                            <td><span>1-3 окна</span></td>
+                                            <td><input type="radio" name="wind" id="4-6" value="4-6 окон"></td>
+                                            <td><label for="4-6"><span>4-6 окон</span></label></td>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
-                                            <td class="td"><span>1-3 окна</span></td>
+                                            <td><input type="radio" name="wind" id="6-10" value="6-10 окон"></td>
+                                            <td class="td"><label for="6-10"><span>6-10 окон</span></label></td>
                                         </td>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
-                                            <td><span>1-3 окна</span></td>
+                                            <td><input type="radio" name="wind" id="Больше 10" value="Больше 10 окон"></td>
+                                            <td><label for="more10"><span>Больше 10 окон</span></label></td>
                                         </td>
                                     </tr>
                                 </table>
@@ -97,21 +97,21 @@
                                 <table>
                                     <tr>
                                         <td >
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="2" id="Квартира"></td>
                                             <td class="td"><span>Квартира</span></td>
                                         </td>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="2" id="Частный дом"></td>
                                             <td><span>Частный дом</span></td>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="2" id="Балкон/лоджия"></td>
                                             <td class="td"><span>Балкон/Лоджия</span></td>
                                         </td>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="2" id="Другое"></td>
                                             <td><span>Другое</span></td>
                                         </td>
                                     </tr>
@@ -130,21 +130,21 @@
                                 <table>
                                     <tr>
                                         <td >
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="3" id="Тёплый"></td>
                                             <td class="td"><span>Тёплый</span></td>
                                         </td>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="3" id="Холодный"></td>
                                             <td><span>Холодный</span></td>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="3" id="Цена/Качество"></td>
                                             <td class="td"><span>Цена / Качество</span></td>
                                         </td>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="3" id="Не знаю"></td>
                                             <td><span>Не знаю</span></td>
                                         </td>
                                     </tr>
@@ -160,24 +160,24 @@
                         <div class="frame__quiz_question">
                             <div class="question">
     
-                                <table>
+                                <table class="">
                                     <tr>
                                         <td >
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="4" id="Есть точные размеры"></td>
                                             <td class="td"><span>Есть точные размеры</span></td>
                                         </td>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="4" id="Есть примерные размеры"></td>
                                             <td><span>Есть примерные размеры</span></td>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="4" id="Нужен замерщик"></td>
                                             <td class="td"><span>Нужен замерщик</span></td>
                                         </td>
                                         <td>
-                                            <td><input type="radio" name="1_1" id=""></td>
+                                            <td><input type="radio" name="4" id="Посчитайте окна"></td>
                                             <td><span>Посчитайте окна</span></td>
                                         </td>
                                     </tr>
@@ -187,7 +187,7 @@
                     </div>
                 </div>
                 <div class="frame__quiz_button">
-                    <button class="ignore">Пропустить</button>
+                    <button class="ignore" onclick="get_obj_resoult_quiz()">Пропустить</button>
                     <button class="next" type="submit" onclick="showNewAsk()">Далее</button>
                 </div>
             </div>
@@ -327,5 +327,7 @@
     </footer>
     <script src="js/menu_burger.js"></script>
     <script src="js/frame.js"></script>
+    <script src="js/test.js"></script>
+</body>
 </body>
 </html>
