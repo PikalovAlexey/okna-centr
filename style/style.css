@@ -210,8 +210,11 @@ tr {
 .frame__contant_input_number {
     display: block;
     margin: 0 auto 20px;
+    padding: 5px;
     height: 30px;
     width: 200px;
+    font-size: 12px;
+    color: #7a7a7a;
     background-color: #e6e6e6;
     border-radius: 5px;
     border: none;
@@ -219,8 +222,10 @@ tr {
 }
 
 .frame__contant_input_number:focus {
-    list-style: none;
-    border-style: none;
+    outline: none;
+    border: 1px solid #12A2F3;
+    background-color: #fff;
+    color: #1b1b1b;
 }
 .frame__contant_input_button {
     border: none;
