@@ -50,7 +50,7 @@ button {
 .frame__contant {
     position: relative;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     height: 500px;
     max-width: 400px;
     top: calc(50% - 225px);
@@ -127,7 +127,7 @@ button {
 }
 .frame__quiz_question {
     margin: 15px 0;
-    padding: 13px 27px;
+    padding: 5px;
     width: 100%;
     background-color: #e1e1e1;
     border-radius: 5px;
