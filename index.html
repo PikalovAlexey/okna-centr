@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Montserrat:wght@300;500;700;900&family=Open+Sans&display=swap" rel="stylesheet">
 
 </head>
-<body> 
+<body > 
     <div id="frame" class="frame">
         <div class="frame__contant">
             <span class="frame__contant_close" onclick="closeOpenFrame()">Закрыть X</span>
@@ -24,16 +24,16 @@
                         <p class="sub_header">Выберете удобный способ получить результат расчёта окон</p>
                     </div>
                     <div id="mes_block" class="frame__contant_messagers">
-                        <span class="frame__contant_message active_message"><img src="/img/WhatsApp.svg.png" alt=""></span>
-                        <span class="frame__contant_message"><img  src="/img/png-transparent-blue-and-white-icon-illustration-telegram-logo-computer-icons-scalable-graphics-telegram-miscellaneous-blue-angle.png" alt=""></span>
-                        <span class="frame__contant_message"><img  src="/img/viber-logo.png" alt=""></span>
-                        <span class="frame__contant_message"><img  src="/img/call.png" alt=""></span>
+                        <span name="WhatsApp" class="frame__contant_message active_message"><img src="/img/WhatsApp.svg.png" alt=""></span>
+                        <span name="Telegramm" class="frame__contant_message"><img  src="/img/teleg.png" alt=""></span>
+                        <span name="Viber" class="frame__contant_message"><img  src="/img/viber-logo.png" alt=""></span>
+                        <span name="Phone" class="frame__contant_message"><img  src="/img/call.png" alt=""></span>
                     </div>
                     <div class="frame__contant_contact">
                         <form action="#">
                             <p style="margin: 25px 0px 15px 0px">Ваш телефон:</p>
-                            <input class="frame__contant_input_number" name="phone" value="+7 " id="phone_quiz">
-                            <input class="frame__contant_input_button" type="button" value="Получить!">
+                            <input autofocus class="frame__contant_input_number" name="phone" value="+7 " id="phone_quiz">
+                            <input onclick="data_collection()" class="frame__contant_input_button" type="button" value="Получить!">
                         </form>
                     </div>
                     <div class="frame__contant_about">
@@ -187,7 +187,7 @@
                     </div>
                 </div>
                 <div class="frame__quiz_button">
-                    <button class="ignore" onclick="get_obj_resoult_quiz()">Пропустить</button>
+                    <button class="ignore" >Пропустить</button>
                     <button class="next" type="submit" onclick="showNewAsk()">Далее</button>
                 </div>
             </div>
@@ -328,6 +328,7 @@
     <script src="js/menu_burger.js"></script>
     <script src="js/frame.js"></script>
     <script src="js/get_resoult_test.js"></script>
+    <script src="js/resoults_in_JSON.js"></script>
 </body>
 </body>
 </html>

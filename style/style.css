@@ -54,7 +54,7 @@ button {
     height: 500px;
     max-width: 400px;
     top: calc(50% - 225px);
-    background-color: #eee;
+    background-color: rgb(255, 255, 255);
     border-radius: 15px;
     box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -122,8 +122,8 @@ button {
     margin: 0 auto;
     border-radius: 10px;
     color: #fff;
-    background: linear-gradient(180deg, rgb(0, 0, 0.7) 0%, rgba(0, 0, 0, 0.7) 0%), url(/img/bg.jpg);
-    border: 2px solid rgba(18, 162, 243, 1);
+    background: linear-gradient(180deg, rgb(36, 212, 153) 10%, rgb(7, 112, 173) 80%);
+    border: 1px solid rgb(107, 107, 107);
 }
 .frame__quiz_question {
     margin: 15px 0;
