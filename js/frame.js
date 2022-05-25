@@ -29,7 +29,6 @@ function closeOpenFrame() {
     frame.classList.toggle('close')
 }
 
-// Note bane!!! Function is O(N2)!!!!!
 function choice_of_messager() { 
     let messeger_block = Array.from(document.getElementsByClassName('frame__contant_message'))
     let choice_of_messager;
