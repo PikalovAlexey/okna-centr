@@ -4,21 +4,21 @@ let ellips = document.getElementsByClassName('ellips');
 let frame_end = document.getElementById('frame__contant_end');
 let frame_main_ask = document.getElementById('frame__contant_container');
 
-let counter = 0;
-quiz[counter].style.display = 'block';
+let currently_ask_number = 0;
+quiz[currently_ask_number].style.display = 'block';
 
 function showNewAsk() {
-    quiz[counter].style.display = 'none';
-    ellips[counter].classList.toggle('ellips_active');
-    ellips[counter].style.backgroundColor = '#a2d8f7';
-    counter++
+    quiz[currently_ask_number].style.display = 'none';
+    ellips[currently_ask_number].classList.toggle('ellips_active');
+    ellips[currently_ask_number].style.backgroundColor = '#a2d8f7';
+    currently_ask_number++
     
-    if (counter < quiz.length) {
-        quiz[counter].style.display = 'block';
-        ellips[counter].classList.toggle('ellips_active');
+    if (currently_ask_number < quiz.length) {
+        quiz[currently_ask_number].style.display = 'block';
+        ellips[currently_ask_number].classList.toggle('ellips_active');
     }
     else {
-        ellips[counter].classList.toggle('ellips_active');
+        ellips[currently_ask_number].classList.toggle('ellips_active');
         frame_end.style.display = 'block';
         frame_main_ask.style.display = 'none';
     }       
